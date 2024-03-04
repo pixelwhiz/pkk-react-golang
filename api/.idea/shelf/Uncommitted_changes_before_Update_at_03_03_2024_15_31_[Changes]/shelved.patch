@@ -1,0 +1,112 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"ALL\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dea8f37e-86d5-46b7-903e-a68a371965d8\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.env\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/backend.iml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/codeStyles/codeStyleConfig.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/dataSources.local.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/dataSources.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/dataSources/98dba26b-7357-47cd-982f-85ad943eff44.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/discord.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/misc.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/modules.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/vcs.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/.idea/workspace.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/controllers/SiswaController.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/controllers/UserController.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/database/Connection.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/go.mod\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/go.sum\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/main.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/models/Setup.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../backend/models/SiswaModel.go\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.gitignore\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/.gitignore\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/dataSources.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/discord.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/profiles_settings.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/modules.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/php.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/pkk.iml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/.idea/vcs.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/README.md\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/package-lock.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/package.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/postcss.config.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/favicon.ico\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/index.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/logo192.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/logo512.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/manifest.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/public/robots.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/404.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/App.test.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/App.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/ColorModeSwitcher.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/Logo.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/components/SideBar.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/components/TopBar.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/components/layouts/HomeLayout.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/components/layouts/Tugas01Layout.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/index.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/input.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/logo.svg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/output.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/pages/Home.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/pages/NotFound.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/pages/Tugas01.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/pages/admin/Login.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/react-app-env.d.ts\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/reportWebVitals.ts\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/serviceWorker.ts\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/setupTests.ts\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/style.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/src/test-utils.tsx\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/tailwind.config.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../frontend/tsconfig.json\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"TypeScript JSX File\" />\r\n        <option value=\"Go File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FormatOnSaveOptions\">\r\n    <option name=\"myRunOnSave\" value=\"false\" />\r\n  </component>\r\n  <component name=\"GOROOT\" url=\"file://C:/Program Files/Go\" />\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"OptimizeOnSaveOptions\">\r\n    <option name=\"myRunOnSave\" value=\"false\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ctLE9xJII8pNbQm66U6Gn1lMI4\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,\r\n    &quot;Go Build.go build backend.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,\r\n    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/daffa/dev/pkk/api&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,\r\n    &quot;ts.external.directory.path&quot;: &quot;C:\\\\Users\\\\ASUS\\\\AppData\\\\Local\\\\JetBrains\\\\GoLand 2023.3.1\\\\plugins\\\\javascript-impl\\\\jsLanguageServicesImpl\\\\external&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;,\r\n      &quot;derby&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\">\r\n      <module name=\"api\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"go build backend\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\" nameIsGenerated=\"true\">\r\n      <module name=\"api\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"backend\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\">\r\n      <module name=\"api\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <framework value=\"gotest\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-gosdk-467a64f6063b-ee0e143f3e2b-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-233.11799.286\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VgoProject\">\r\n    <settings-migrated>true</settings-migrated>\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/backend$go_build_backend.out\" NAME=\"go build backend Coverage Results\" MODIFIED=\"1709080075895\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"GoCoverage\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 893cb6747cc83c907cce6256fba5902672fd0cd1)
++++ b/.idea/workspace.xml	(date 1709454556540)
+@@ -5,72 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="dea8f37e-86d5-46b7-903e-a68a371965d8" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.env" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/backend.iml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/dataSources.local.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/dataSources.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/dataSources/98dba26b-7357-47cd-982f-85ad943eff44.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/discord.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/misc.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/modules.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/vcs.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/controllers/SiswaController.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/controllers/UserController.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/database/Connection.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/go.mod" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/go.sum" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/main.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/models/Setup.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../backend/models/SiswaModel.go" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.gitignore" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/.gitignore" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/dataSources.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/discord.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/modules.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/php.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/pkk.iml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/vcs.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/README.md" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/postcss.config.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/logo192.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/logo512.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/manifest.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/public/robots.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/404.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.test.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/ColorModeSwitcher.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/Logo.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/SideBar.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/TopBar.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layouts/HomeLayout.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layouts/Tugas01Layout.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/input.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/logo.svg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/output.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/NotFound.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Tugas01.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/admin/Login.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/react-app-env.d.ts" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/reportWebVitals.ts" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/serviceWorker.ts" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/setupTests.ts" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/style.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/src/test-utils.tsx" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/tailwind.config.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.json" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -140,7 +75,8 @@
+     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+       <module name="api" />
+       <working_directory value="$PROJECT_DIR$" />
+-      <kind />
++      <kind value="PACKAGE" />
++      <package value="api" />
+       <directory value="$PROJECT_DIR$" />
+       <filePath value="$PROJECT_DIR$" />
+       <method v="2" />
+@@ -157,7 +93,7 @@
+     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+       <module name="api" />
+       <working_directory value="$PROJECT_DIR$" />
+-      <kind />
++      <kind value="DIRECTORY" />
+       <directory value="$PROJECT_DIR$" />
+       <filePath value="$PROJECT_DIR$" />
+       <framework value="gotest" />
+@@ -177,6 +113,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++    <MESSAGE value="change frontend to user" />
++    <option name="LAST_COMMIT_MESSAGE" value="change frontend to user" />
+   </component>
+   <component name="VgoProject">
+     <settings-migrated>true</settings-migrated>
