@@ -24,7 +24,7 @@ func Login(c *gin.Context) {
 
 	if username == "admin" && password == "admin" {
 		claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
-			Issuer: strconv.Itoa(int(1)),
+			Issuer:    strconv.Itoa(int(1)),
 			ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
 		})
 
@@ -40,11 +40,11 @@ func Login(c *gin.Context) {
 		session := sessions.Default(c)
 		session.Set("jwt", token)
 		session.Save()
-		
+
 		c.SetCookie("jwt", token, 3600, "/", "", false, true)
 		c.JSON(http.StatusOK, gin.H{
 			"message": "Login Successfully",
-			"token": token,
+			"token":   token,
 		})
 
 	} else {
@@ -52,7 +52,7 @@ func Login(c *gin.Context) {
 	}
 }
 
-func User(c *gin.Context)  {
+func User(c *gin.Context) {
 	cookie, err := c.Cookie("jwt")
 	if err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{
