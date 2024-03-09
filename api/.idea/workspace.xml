@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea8f37e-86d5-46b7-903e-a68a371965d8" name="Changes" comment="change backend -&gt; api">
-      <change afterPath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01CreateLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01ModifyLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/src/middlewares/ErrorHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/src/pages/Tugas01Create.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user/src/pages/Tugas01Modify.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/src/components/layouts/HomeLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/components/layouts/HomeLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user/src/components/SessionChecker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user/src/middlewares/AuthenticationUser.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01ModifyLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/components/layouts/Tugas01ModifyLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/pages/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user/src/pages/Tugas01.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/pages/Tugas01.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/src/pages/Tugas01Create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/pages/Tugas01Create.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/src/pages/Tugas01Modify.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/pages/Tugas01Modify.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user/src/pages/admin/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/pages/admin/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

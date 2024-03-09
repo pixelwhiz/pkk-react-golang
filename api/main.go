@@ -29,6 +29,7 @@ func main() {
 	router.POST("/api/login", controllers.Login)
 	router.POST("/api/create", controllers.Create)
 	router.DELETE("/api/siswa/:nis", controllers.DeleteSiswaByNIS)
+	router.GET("/api/siswa/:nis", controllers.GetSiswaByNIS)
 	router.GET("/api/get", controllers.GetAll)
 	router.POST("/api/update", controllers.Update)
 	router.GET("/api/user", controllers.User)

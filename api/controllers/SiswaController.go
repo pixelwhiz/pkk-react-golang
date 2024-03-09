@@ -54,7 +54,6 @@ func Create(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Siswa created successfully"})
 }
 
-
 func Update(c *gin.Context) {
 	var siswa models.Siswa
 	nis := c.Param("nis")
@@ -79,5 +78,27 @@ func DeleteSiswaByNIS(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Siswa deleted successfully"})
+	c.JSON(http.StatusOK, gin.H{"message":
+		"Siswa deleted successfully"})
+}
+
+type Siswa struct {
+	NIS         string `json:"nis"`
+	Name        string `json:"name"`
+	Gender      string `json:"gender"`
+	Address     string `json:"address"`
+	PhoneNumber string `json:"phone_number"`
+}
+
+func GetSiswaByNIS(c *gin.Context) {
+	var siswa Siswa
+	nis := c.Param("nis")
+
+	result := models.DB.First(&siswa, "nis = ?", nis)
+	if result.Error != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Siswa not found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, siswa)
 }
