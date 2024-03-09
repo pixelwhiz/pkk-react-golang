@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"api/helpers"
 	"api/models"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -55,19 +56,43 @@ func Create(c *gin.Context) {
 }
 
 func Update(c *gin.Context) {
-	var siswa models.Siswa
 	nis := c.Param("nis")
-	if err := models.DB.Where("nis = ?", nis).First(&siswa).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Record not found!"})
+	
+	var siswa models.Siswa
+	err := c.ShouldBind(&siswa)
+	if err != nil {
+		errorMessage := helpers.GenerateValidationResponse(err)
+		c.JSON(http.StatusBadRequest, gin.H{
+			"message": errorMessage,
+		})
 		return
 	}
-	if err := c.ShouldBindJSON(&siswa); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+
+	fullname := c.PostForm("fullname")
+	gender := c.PostForm("gender")
+	address := c.PostForm("address")
+	phonenumber := c.PostForm("phone_number")
+
+	siswa.NIS = nis
+	siswa.Name = fullname
+	siswa.Gender = gender
+	siswa.Address = address
+	siswa.PhoneNumber = phonenumber
+
+	result := models.DB.Model(&siswa).Where("nis = ?", nis).Updates(&siswa)
+	if result.Error != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"message": result.Error,
+		})
 		return
 	}
-	models.DB.Save(&siswa)
-	c.JSON(http.StatusOK, siswa)
+
+	c.JSON(http.StatusOK, gin.H{
+		"message": "Siswa updated",
+		"siswa":   siswa,
+	})
 }
+
 
 func DeleteSiswaByNIS(c *gin.Context) {
 	result := models.DB.Delete(&models.Siswa{}, c.Param("nis"))

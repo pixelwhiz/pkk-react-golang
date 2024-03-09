@@ -31,7 +31,7 @@ func main() {
 	router.DELETE("/api/siswa/:nis", controllers.DeleteSiswaByNIS)
 	router.GET("/api/siswa/:nis", controllers.GetSiswaByNIS)
 	router.GET("/api/get", controllers.GetAll)
-	router.POST("/api/update", controllers.Update)
+	router.POST("/api/update/:nis", controllers.Update)
 	router.GET("/api/user", controllers.User)
 	router.POST("/api/logout", controllers.Logout)
 
