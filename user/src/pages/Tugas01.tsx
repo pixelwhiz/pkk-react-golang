@@ -2,8 +2,8 @@ import React, {useEffect} from 'react';
 import {Box, ChakraProvider, Grid, theme} from "@chakra-ui/react";
 import {SideBar} from "../components/SideBar";
 import {TopBar} from "../components/TopBar";
-import {Tugas01Layout} from "../components/layouts/Tugas01Layout";
 import axios from "axios";
+import Tugas01Layout from "../components/layouts/Tugas01Layout";
 
 const Tugas01 = () => {
 

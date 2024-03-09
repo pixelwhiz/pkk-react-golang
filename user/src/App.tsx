@@ -18,6 +18,8 @@ import {Route, BrowserRouter, Routes, Navigate} from "react-router-dom";
 import Login from "./pages/admin/Login";
 import NotFoundPages from "./pages/NotFound";
 import Tugas01 from "./pages/Tugas01";
+import Tugas01Create from "./pages/Tugas01Create";
+import Tugas01Modify from "./pages/Tugas01Modify";
 
 export const App = () => (
     <ChakraProvider theme={theme}>
@@ -26,6 +28,8 @@ export const App = () => (
               <Route path={"/"} element={<Navigate to={"/home"}/>}/>
               <Route path={"/home"} element={<Home />} />
               <Route path={"/daftarsiswa"} element={<Tugas01 />} />
+              <Route path={"/daftarsiswa/create"} element={<Tugas01Create />} />
+              <Route path={"/daftarsiswa/:nis/modify"} element={<Tugas01Modify />} />
               <Route path={"/login"} element={<Login />} />
               <Route path={"/*"} element={<NotFoundPages />} />
           </Routes>
