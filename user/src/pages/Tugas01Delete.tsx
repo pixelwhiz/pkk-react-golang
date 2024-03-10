@@ -6,8 +6,9 @@ import axios from "axios";
 import Tugas01Layout from "../components/layouts/Tugas01Layout";
 import Tugas01ModifyLayout from "../components/layouts/Tugas01ModifyLayout";
 import {checkUser} from "../middlewares/AuthenticationUser";
+import Tugas01DeleteLayout from "../components/layouts/Tugas01DeleteLayout";
 
-const Tugas01Modify = () => {
+const Tugas01Delete = () => {
 
     const local_server = process.env.REACT_APP_LOCAL_SERVER;
     const network_server = process.env.REACT_APP_NETWORK_SERVER;
@@ -31,11 +32,11 @@ const Tugas01Modify = () => {
             </Box>
             <Box className={"grid w-full absolute"}>
         <TopBar />
-        <Tugas01ModifyLayout />
+        <Tugas01DeleteLayout />
         </Box>
         </Box>
         </ChakraProvider>
 );
 };
 
-export default Tugas01Modify;
+export default Tugas01Delete;

@@ -25,8 +25,9 @@ import {BsGear, BsPencil, BsPerson, BsSearch, BsTrash} from "react-icons/all";
 import axios from "axios";
 import {Form} from "react-router-dom";
 import {ArrowDownLeftIcon, ArrowLeftIcon, ArrowUturnLeftIcon, ChevronDoubleLeftIcon} from "@heroicons/react/24/solid";
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {worker} from "cluster";
+import {checkUser} from "../../middlewares/AuthenticationUser";
 
 interface Siswa {
     nis: number;

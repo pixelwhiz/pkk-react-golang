@@ -5,6 +5,7 @@ import {TopBar} from "../components/TopBar";
 import axios from "axios";
 import Tugas01Layout from "../components/layouts/Tugas01Layout";
 import Tugas01ModifyLayout from "../components/layouts/Tugas01ModifyLayout";
+import {checkUser} from "../middlewares/AuthenticationUser";
 
 const Tugas01Modify = () => {
 
@@ -13,17 +14,8 @@ const Tugas01Modify = () => {
 
     const checkUserIsLoggedIn = async () => {
         try {
-            const response = await axios.get(`${local_server}/api/user`, {
-                withCredentials: true
-            });
+            await checkUser();
         } catch (err) {
-            try {
-                const response = await axios.get(`${network_server}/api/user`, {
-                    withCredentials: true
-                });
-            } catch (err) {
-                window.location.href = "/login";
-            }
         }
     };
 

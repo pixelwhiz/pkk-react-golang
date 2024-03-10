@@ -130,7 +130,6 @@ const Login = () => {
                     }
                 }
             } catch (err) {
-                // Handle error jika kedua request juga gagal
             }
         }
     };

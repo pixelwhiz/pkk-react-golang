@@ -16,8 +16,6 @@ const SessionChecker = () => {
 
     return (
         <>
-            <Button onClick={onOpen}>Open Modal</Button>
-
             <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>

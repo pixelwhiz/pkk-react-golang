@@ -4,6 +4,7 @@ import {SideBar} from "../components/SideBar";
 import {TopBar} from "../components/TopBar";
 import {HomeLayout} from "../components/layouts/HomeLayout";
 import axios from "axios";
+import {checkUser} from "../middlewares/AuthenticationUser";
 
 const Home = () => {
 
@@ -12,19 +13,8 @@ const Home = () => {
 
     const checkUserIsLoggedIn = async () => {
         try {
-            const responseLocal = await axios.get(`${local_server}/api/user`, {
-                withCredentials: true
-            });
-
+            await checkUser();
         } catch (err) {
-            try {
-                const responseNetwork = await axios.get(`${network_server}/api/user`, {
-                    withCredentials: true
-                });
-
-            } catch (err) {
-                window.location.href = "/login";
-            }
         }
     };
 

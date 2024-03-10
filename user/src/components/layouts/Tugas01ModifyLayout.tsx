@@ -1,14 +1,14 @@
 import * as React from "react";
 import {
     Box,
-    Button, Card, CardBody, CardFooter, CardHeader,
+    Button, Card, CardBody, CardFooter, CardHeader, Flex,
     FormControl, FormErrorMessage,
-    FormLabel, Heading,
+    FormLabel, Grid, Heading,
     Input, Select,
     Table,
     TableCaption,
     Tbody,
-    Td,
+    Td, Text,
     Th,
     Thead,
     Tr, useToast,
@@ -18,9 +18,10 @@ import axios from "axios";
 import {register} from "../../serviceWorker";
 import {Simulate} from "react-dom/test-utils";
 import error = Simulate.error;
-import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useEffect, useLayoutEffect, useState} from "react";
+import {useLocation, useParams} from "react-router-dom";
 import {handleDeleteSiswa} from "../../middlewares/ErrorHandler";
+import ModifySiswaSidebar from "../ModifySiswaSidebar";
 
 interface Siswa {
     nis: number;
@@ -35,6 +36,7 @@ const Tugas01ModifyLayout: React.FC = () => {
     const nis = params.nis ?? "";
 
     const toast = useToast();
+    const location = useLocation();
 
     const [nisform, setNISForm] = useState<string>("");
     const [fullname, setFullName] = useState<string>("");
@@ -45,36 +47,53 @@ const Tugas01ModifyLayout: React.FC = () => {
     const submitForm = async () => {
         try {
             const formData = new FormData();
-            formData.append('nis', nisform);
-            formData.append('name', fullname);
+            formData.append('fullname', fullname);
             formData.append('gender', gender);
             formData.append('address', address);
             formData.append('phone_number', phoneNumber);
-            const response = await axios.post("http://localhost:8000/api/create", formData, {
+            const response = await axios.post(`http://localhost:8000/api/update/${nis}`, formData, {
                 withCredentials: true
             });
+
+            if (response.status === 200) {
+                toast({
+                    position: "top-left",
+                    title: 'Success',
+                    description: `Siswa dengan NIS '${nis}' berhasil di update!`,
+                    status: 'success',
+                    duration: 2000,
+                    isClosable: true,
+                });
+                setTimeout(() => {
+                    window.location.href = "/daftarsiswa";
+                }, 2000);
+            }
+
         } catch (err) {
 
+        }
+    };
+
+    const getSiswaByNIS = async () => {
+        try {
+            const response = await axios.get(`http://localhost:8000/api/siswa/${nis}`, {
+                withCredentials: true
+            });
+            if (response.status === 200) {
+                setNISForm(response.data.nis);
+                setFullName(response.data.name);
+                setGender(response.data.gender);
+                setAddress(response.data.address);
+                setPhoneNumber(response.data.phone_number);
+            }
+        } catch (err) {
         }
     };
 
     useEffect(() => {
         getSiswaByNIS();
-    });
+    }, []);
 
-    const getSiswaByNIS = async () => {
-        try {
-            const formData = new FormData();
-            formData.append('nis', nis);
-            const response = await axios.post("http://localhost:8000/api/get_siswa_by_id", formData, {
-                withCredentials: true
-            });
-            if (response.status === 200) {
-
-            }
-        } catch (err) {
-        }
-    };
 
     const deleteSiswa = async () => {
         try {
@@ -107,47 +126,49 @@ const Tugas01ModifyLayout: React.FC = () => {
 
     return (
         <Box height={"100vh"} overflowY={"auto"} className={"border-s-2 border-[#ddd] ms-72 bg-[#eee]"}>
-            <Box className={"mx-52 m-5 grid gap-5"}>
-                <Card className={"p-5"} rounded={"1rem"}>
-                    <CardHeader>
-                        <Heading>Modify Data</Heading>
-                    </CardHeader>
-                    <CardBody>
-                        <FormControl mb={4} isRequired>
-                            <FormLabel>NIS (Nomor Induk Siswa)</FormLabel>
-                            <Input onChange={(e) => setNISForm(e.target.value.replace(/\D/g, ''))} value={nisform} variant={"filled"} focusBorderColor={"black"} placeholder='Nomor Induk Siswa' />
-                        </FormControl>
-                        <FormControl isRequired>
-                            <FormLabel>Nama Lengkap</FormLabel>
-                            <Input onChange={(e) => setFullName(e.target.value)} value={fullname} variant={"filled"} focusBorderColor={"black"} placeholder='Nama Lengkap' />
-                        </FormControl>
-                        <FormControl my={4} isRequired>
-                            <FormLabel>Jenis Kelamin</FormLabel>
-                            <Select onChange={(e) => setGender(e.target.value.replace(/\s/g, ''))} value={gender} variant={"filled"} focusBorderColor={"black"}>
-                                <option defaultChecked disabled>Select Gender</option>
-                                <option>Laki - Laki</option>
-                                <option>Perempuan</option>
-                            </Select>
-                        </FormControl>
-                        <FormControl mb={4} isRequired>
-                            <FormLabel>Alamat</FormLabel>
-                            <Input onChange={(e) => setAddress(e.target.value)} value={address} variant={"filled"} focusBorderColor={"black"} type="text" name="address" placeholder={"Jln. Semeru No 164A"} />
-                        </FormControl>
-                        <FormControl mb={4} isRequired>
-                            <FormLabel>Nomor HP</FormLabel>
-                            <Input onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/g, ''))} value={phoneNumber} variant={"filled"} focusBorderColor={"black"} type="text" name="phone_number" placeholder={"6289603788562"} />
-                        </FormControl>
-                    </CardBody>
-                    <CardFooter className={"flex justify-between gap-2.5"}>
-                        <Box className={"flex gap-2.5"}>
-                            <Button onClick={deleteSiswa} colorScheme="red">Delete</Button>
-                        </Box>
-                        <Box className={"flex gap-2.5"}>
-                            <Button onClick={routeToDaftarSiswa} variant={"outline"} colorScheme="teal">Back</Button>
-                            <Button type="submit" colorScheme="teal">Save</Button>
-                        </Box>
-                    </CardFooter>
-                </Card>
+            <Box className={"grid w-full gap-5"}>
+                <Box className={"m-5"}>
+                    <Flex className={"gap-5"}>
+                        <ModifySiswaSidebar />
+                        <Card className={"w-full px-10"} rounded={"1rem"}>
+                            <CardHeader>
+                                <Heading>Modify Data</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Box>
+                                    <FormControl mb={4}>
+                                        <FormLabel>NIS (Nomor Induk Siswa)</FormLabel>
+                                        <Input disabled onChange={(e) => setNISForm(e.target.value.replace(/\D/g, ''))} value={nisform} variant={"filled"} focusBorderColor={"black"} placeholder='Nomor Induk Siswa' />
+                                    </FormControl>
+                                    <FormControl>
+                                        <FormLabel>Nama Lengkap</FormLabel>
+                                        <Input onChange={(e) => setFullName(e.target.value)} value={fullname} variant={"filled"} focusBorderColor={"black"} placeholder='Nama Lengkap' />
+                                    </FormControl>
+                                    <FormControl my={4}>
+                                        <FormLabel>Jenis Kelamin</FormLabel>
+                                        <Select onChange={(e) => setGender(e.target.value.replace(/\s/g, ''))} value={gender} variant={"filled"} focusBorderColor={"black"}>
+                                            <option defaultChecked disabled>Select Gender</option>
+                                            <option>Laki - Laki</option>
+                                            <option>Perempuan</option>
+                                        </Select>
+                                    </FormControl>
+                                    <FormControl mb={4}>
+                                        <FormLabel>Alamat</FormLabel>
+                                        <Input onChange={(e) => setAddress(e.target.value)} value={address} variant={"filled"} focusBorderColor={"black"} type="text" name="address" placeholder={"Jln. Semeru No 164A"} />
+                                    </FormControl>
+                                    <FormControl mb={4}>
+                                        <FormLabel>Nomor HP</FormLabel>
+                                        <Input onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/g, ''))} value={phoneNumber} variant={"filled"} focusBorderColor={"black"} type="text" name="phone_number" placeholder={"6289603788562"} />
+                                    </FormControl>
+                                </Box>
+                            </CardBody>
+                            <CardFooter className={"flex justify-end gap-2.5"}>
+                                <Button onClick={routeToDaftarSiswa} variant={"outline"} colorScheme="teal">Back</Button>
+                                <Button className={"w-32"} onClick={submitForm} colorScheme="teal">Save</Button>
+                            </CardFooter>
+                        </Card>
+                    </Flex>
+                </Box>
             </Box>
         </Box>
     );

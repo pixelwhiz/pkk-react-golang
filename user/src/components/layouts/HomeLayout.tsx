@@ -23,8 +23,7 @@ export const HomeLayout = () => (
     <Box
         height={"100vh"}
         overflowY={"auto"}
-        className={"h-full border-s-2 border-[#ddd] ms-72"}
-        bg={useColorModeValue("gray.100", "gray.800")}
+        className={"h-full border-s-2 border-[#ddd] ms-72 bg-[#eee]"}
     >
         <Box className={"m-5"}>
             <Card
@@ -44,7 +43,7 @@ export const HomeLayout = () => (
                         We're excited to have you here! Get started now and explore our amazing features.
                     </Text>
                     <Button onClick={routeToDaftarSiswa} leftIcon={<BsBoxArrowRight />} backgroundColor={"teal.600"} colorScheme='teal' variant='solid'>
-                        Get Started
+                        Getting Started
                     </Button>
                 </Box>
             </Card>
